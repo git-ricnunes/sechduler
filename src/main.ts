@@ -4,10 +4,9 @@ import { AppModule } from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  
   const config = new DocumentBuilder()
     .setTitle('Scheduler API')
-    .setDescription('The  scheduler API swagger specs')
+    .setDescription('The scheduler API swagger specs')
     .setVersion('1.0')
     .addTag('scheduler')
     .build();

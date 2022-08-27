@@ -13,6 +13,8 @@ export class User {
         public username:string
         @Prop()
         public password:string
+        @Prop()
+        public role:string
 }
 
 export const UserSchema = SchemaFactory.createForClass(User);
